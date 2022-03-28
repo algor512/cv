@@ -16,7 +16,7 @@
 
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
 
-\LoadClass[11pt,letterpaper]{article} % Font size and paper type
+\LoadClass[9pt,letterpaper]{article} % Font size and paper type
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
@@ -108,8 +108,8 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[3]{
-  \begin{tabular}{@{}p{0.75\textwidth-2\tabcolsep-\leftmargin}>{\raggedleft\arraybackslash}p{0.25\textwidth-2\tabcolsep}@{}}
-    {\strut \bf #1 \strut} & {#2}
+  \begin{tabular}{@{}p{0.7\textwidth-2\tabcolsep-\leftmargin}>{\raggedleft\arraybackslash}p{0.3\textwidth-2\tabcolsep}@{}}
+    {\strut \bf #1 \strut} & {\small #2}
   \end{tabular}
   \ifthenelse{\equal{#3}{}}{}{
   \\ {\em #3} %\strut\hfill {\em #3}
